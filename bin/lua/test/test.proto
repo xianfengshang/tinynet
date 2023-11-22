@@ -1,0 +1,92 @@
+package Testing;
+
+message Person {
+	required string name = 1;
+	required int32 id = 2;
+	optional string email = 3;
+	
+	enum PhoneType {
+		MOBILE = 0;
+		HOME = 1;
+		WORK = 2;
+	}
+	
+	message PhoneNumber {
+	    required string number = 1;
+		optional PhoneType type = 2 [default = HOME];
+	}
+	
+	repeated PhoneNumber phones = 4;
+    //extensions 100 to 10000;
+}
+
+/*extend Person {
+    optional int32 age = 100; 
+    optional string country = 101;  
+}*/
+
+message AddressBook {
+	repeated Person people = 1;
+}
+
+enum AwesomeEnum {
+    AwesomeEnumValue1 = 0;
+    AwesomeEnumValue2 = 1;
+    AwesomeEnumValue3 = 2;
+}
+    
+message AwesomeMessage {
+    required double required_double_field = 1;
+    required float required_float_field = 2;
+    required int64 required_int64_field = 3;
+    required uint64 required_uint64_field = 4;
+    required int32 required_int32_field = 5;
+    required fixed64 required_fixed64_field = 6;
+    required fixed32 required_fixed32_field = 7;
+    required bool required_bool_field = 8;
+    required string required_string_field = 9;
+    required AddressBook required_message_field =  10;
+    required bytes required_bytes_field = 11;
+    required uint32 required_uint32_field = 12;
+    required AwesomeEnum required_enum_field = 13;
+    required sfixed32 required_sfixed32_field = 14;
+    required sfixed64 required_sfixed64_field = 15;
+    required sint32 required_sint32_field = 16;
+    required sint64 required_sint64_field = 17;
+    
+    optional double optional_double_field = 21;
+    optional float optional_float_field = 22;
+    optional int64 optional_int64_field = 23;
+    optional uint64 optional_uint64_field = 24;
+    optional int32 optional_int32_field = 25;
+    optional fixed64 optional_fixed64_field = 26;
+    optional fixed32 optional_fixed32_field = 27;
+    optional bool optional_bool_field = 28;
+    optional string optional_string_field = 29;
+    optional AddressBook optional_message_field =  30;
+    optional bytes optional_bytes_field = 31;
+    optional uint32 optional_uint32_field = 32;
+    optional AwesomeEnum optional_enum_field = 33;
+    optional sfixed32 optional_sfixed32_field = 34;
+    optional sfixed64 optional_sfixed64_field = 35;
+    optional sint32 optional_sint32_field = 36;
+    optional sint64 optional_sint64_field = 37;
+    
+    repeated double repeated_double_field = 41;
+    repeated float repeated_float_field = 42;
+    repeated int64 repeated_int64_field = 43;
+    repeated uint64 repeated_uint64_field = 44;
+    repeated int32 repeated_int32_field = 45;
+    repeated fixed64 repeated_fixed64_field = 46;
+    repeated fixed32 repeated_fixed32_field = 47;
+    repeated bool repeated_bool_field = 48;
+    repeated string repeated_string_field = 49;
+    repeated AddressBook repeated_message_field =  50;
+    repeated bytes repeated_bytes_field = 51;
+    repeated uint32 repeated_uint32_field = 52;
+    repeated AwesomeEnum repeated_enum_field = 53;
+    repeated sfixed32 repeated_sfixed32_field = 54;
+    repeated sfixed64 repeated_sfixed64_field = 55;
+    repeated sint32 repeated_sint32_field = 56;
+    repeated sint64 repeated_sint64_field = 57;    
+}

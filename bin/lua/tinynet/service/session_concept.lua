@@ -1,0 +1,16 @@
+
+---@class SessionConcept:Object
+---@field export fun(self:SessionConcept)
+---@field push fun(self:SessionConcept)
+---@field sync fun(self:SessionConcept)
+---@field bind fun(self:SessionConcept)
+---@field unbind fun(self:SessionConcept)
+---@field update fun(self:SessionConcept)
+---@field new fun(self:SessionConcept):SessionConcept
+---@field is_connected fun(self:SessionConcept):boolean
+---@field push_message  fun(self:SessionConcept, route:string, msg:table, async:boolean):boolean
+---@field push_messages  fun(self:SessionConcept, msgs:table[], async:boolean):boolean
+---@field gate_id string
+---@field id string
+---@field addr string
+---@field uid integer
