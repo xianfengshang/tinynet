@@ -1,0 +1,13 @@
+#redis数据库名字空间(key的前缀)
+namespace: Dev #TODO 修改名字空间
+#是否是集群模式
+cluster: false
+#数据库节点
+nodes:
+    -
+     host: 127.0.0.1 #TODO  修改redis主机地址
+     port: 6379
+     path: "" 
+     password: "" #TODO  修改redis密码
+     logCommand: false
+     logFile: ./log/redis/redis

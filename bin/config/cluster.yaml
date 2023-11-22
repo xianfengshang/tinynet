@@ -1,0 +1,19 @@
+#集群名称
+clusterName: TINYNET
+#集群ID
+clusterId: 1
+#服务器自动绑定的端口范围
+servicePortRange: [10000, 11000]
+
+#名字服务
+namingService:
+  debugMode: false
+  nameSpace: naming
+  registrationInterval: 10000
+  expiryTime: 60000
+  dataDir: storage
+  snapshotCount: 10000
+  heartbeatInterval: 1000
+  electionTimeout: 5000
+  servers:
+    - { id: name1, url: tcp://127.0.0.1:3006 }

@@ -1,0 +1,8 @@
+#调试模式
+debugMode: false
+#记录消息日志
+logMessage: true
+#通信协议日志
+messageFile: log/message/message
+#策划配置表目录
+designPath: design

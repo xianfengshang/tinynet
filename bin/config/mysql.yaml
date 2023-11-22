@@ -1,0 +1,87 @@
+#数据库主机锚点
+db_host_0: &db_host_0
+    host: 127.0.0.1 #TODO 修改数据库主机地址
+    port: 3306
+ 
+#数据库用户锚点
+db_user: &db_user
+    user: root #TODO 修改数据库用户名
+    password: root #TODO 修改数据库密码
+    
+#连接设置
+db_setting: &db_setting
+    encoding: utf8mb4
+    logConnect: false
+    logSql: false
+    connectionLimit: 1
+    logSqlFile: ./log/mysql/mysql
+
+#分片服务配置
+sharding_setting:
+    #索引表前缀
+    indexTablePrefix: "index_"
+    #索引表数量
+    indexTableCount: 10
+
+#分片服务数据库
+sharding:
+    database: sharding #TODO 修改分片服务数据库名
+    <<: *db_host_0
+    <<: *db_user
+    <<: *db_setting
+
+#全局数据库
+global:
+    database: global #TODO 修改全局数据库名
+    <<: *db_host_0
+    <<: *db_user
+    <<: *db_setting
+ 
+#gmtool数据库
+gmtool_sys:
+    database: gmtool_sys #TODO 修改gmtool_sys数据库名
+    <<: *db_host_0
+    <<: *db_user
+    <<: *db_setting 
+
+#gmtool数据库
+gmtool_data:
+    database: gmtool_data #TODO 修改gmtool_data数据库名
+    <<: *db_host_0
+    <<: *db_user
+    <<: *db_setting 
+    
+#后台数据库
+admin_sys:
+    database: admin_sys #TODO 修改后台数据库名
+    <<: *db_host_0
+    <<: *db_user
+    <<: *db_setting 
+
+#后台数据库
+admin_data:
+    database: admin_data #TODO 修改后台数据库名
+    <<: *db_host_0
+    <<: *db_user
+    <<: *db_setting 
+
+#world数据库
+world:
+    database: world #TODO 修改world数据库名
+    <<: *db_host_0
+    <<: *db_user
+    <<: *db_setting 
+    
+#玩家数据库
+game:
+    #数据表数量
+    tableSliceCount: 1
+    #分片策略
+    shardingStrategy: load,
+    #数据库分片信息列表
+    databaseShards:
+        -
+          database: game_0 #TODO 修改玩家数据库名
+          <<: *db_host_0
+          <<: *db_user
+          <<: *db_setting          

@@ -1,0 +1,5 @@
+-
+   sid: 1
+   name: LOCAL_SERVER
+   url: ws://127.0.0.1:11001
+   webUrl: http://127.0.0.1:11080

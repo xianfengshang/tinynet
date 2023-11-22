@@ -1,0 +1,25 @@
+#服务进程列表
+
+global:
+    -
+      id: "global"
+      host: "127.0.0.1"
+world:
+    -
+      id: "world"
+      host: "127.0.0.1"    
+gate:
+    -
+      id: "gate-${HOST}-1"
+      clientPort: 11001
+web:
+    -
+      id: "web-${HOST}-1"
+      clientPort: 11080
+      port: 11180
+player:
+    -
+      id: "player-${HOST}-1"
+scene:
+    -
+      id: "scene-${HOST}-1"        
