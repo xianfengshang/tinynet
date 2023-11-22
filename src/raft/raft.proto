@@ -1,0 +1,74 @@
+package tinynet.raft;
+
+option cc_generic_services = true;
+
+message SnapshotData {
+    optional uint64 index = 1;
+    optional uint64 term = 2;
+    optional bytes data = 3;
+}
+
+message LogEntryData {
+    optional uint64 index = 1;
+    optional uint64 term = 2;
+    optional bytes data = 3;
+}
+
+message LogData {
+    repeated LogEntryData logs = 1; 
+}
+
+message VoteReq {
+    optional int32 peerId = 1;
+	optional uint64 term = 2;
+	optional int32 candidateId = 3;
+	optional uint64 lastLogIndex = 4;
+	optional uint64 lastLogTerm  = 5;
+}
+
+message VoteResp {
+	optional uint64 term = 1;
+	optional bool voteGranted = 2;
+}
+
+message AppendEntriesReq {
+    optional int64 timestamp = 1;
+    optional int32 peerId = 2;
+	optional uint64 term = 3;
+	optional int32 leaderId = 4;
+	optional uint64 prevLogIndex = 5;
+	optional uint64 prevLogTerm = 6;
+	repeated LogEntryData entries = 7;
+	optional uint64 leaderCommit = 8;
+    optional SnapshotData snapshot = 9;
+}
+
+message AppendEntriesResp {
+	optional uint64 term = 1;
+	optional bool success = 2;
+    optional uint64 matchIndex = 3;
+}
+
+message InstallSnapshotReq {
+	optional int32 peerId = 1;
+    optional uint64 term = 2;
+    optional int32 leaderId = 3;
+    optional uint64 lastIncludedIndex = 4;
+    optional uint64 lastIncludedTerm = 5;
+    optional uint32 offset = 6;
+    optional bytes data = 7;
+    optional bool done = 8;
+}
+
+message InstallSnapshotResp {
+    optional uint64 term = 1;
+}
+
+service RaftRpcService {
+
+	rpc RequestVote(VoteReq) returns (VoteResp);
+
+	rpc AppendEntries(AppendEntriesReq) returns (AppendEntriesResp);
+
+	rpc InstallSnapshot(InstallSnapshotReq) returns (InstallSnapshotResp);
+}

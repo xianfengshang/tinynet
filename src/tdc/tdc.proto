@@ -1,0 +1,17 @@
+package tinynet.tdc;
+
+option cc_generic_services = true;
+
+message TransferRequest {
+    optional int64 guid = 1;
+    optional bytes body = 2;
+}
+
+message TransferResponse {
+	optional int64 guid = 1;
+    optional int32 error_code = 2 [default = -5801]; //default error code is tdc service unavailable
+}
+
+service TdcRpcService {
+    rpc Transfer(TransferRequest) returns(TransferResponse);
+};

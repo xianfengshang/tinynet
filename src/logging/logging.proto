@@ -1,0 +1,50 @@
+package tinynet.logging;
+
+option cc_generic_services = true;
+
+//日志内容
+message LogMessageItem {
+    optional string host = 1; //主机名
+    optional int32 pid = 2;   //进程ID
+    optional int32 tid = 3;   //线程ID
+    optional string file = 4;    //文件名
+    optional int32 line = 5;    //行号
+    optional int32 serverity = 6;   //日志级别
+    optional string msg = 7;    //日志内容
+    optional int64 timestamp = 8;   //时间戳
+}
+
+//日志选项
+message LogOptions{
+    optional bool logtostderr = 1;  // Set whether log messages go to stderr instead of logfiles
+    optional bool alsologtostderr = 2; // Set whether log messages go to stderr in addition to logfiles.
+    optional bool colorlogtostderr = 3; // Set color messages logged to stderr (if supported by terminal).
+    optional int32 stderrthreshold = 4; // Log messages at a level >= this flag are automatically sent to
+// stderr in addition to log files.
+    optional bool log_prefix = 5;   // Set whether the log prefix should be prepended to each line of output.
+    optional int32 logbuflevel = 6; // Log messages at a level <= this flag are buffered.
+// Log messages at a higher level are flushed immediately.
+    optional int32 logbufsecs = 7; // Sets the maximum number of seconds which logs may be buffered for.
+    optional int32 minloglevel = 8; // Log suppression level: messages logged at a lower level than this
+// are suppressed.
+    optional int32 logfile_mode = 9; // Set the log file mode.
+    optional int32 v = 10;  //// in vlog_is_on.cc
+    optional int32 max_log_size = 11;   // Sets the maximum log file size (in MB).
+    optional bool stop_logging_if_full_disk = 12; // Sets whether to avoid logging to the disk if the disk is full.
+}
+
+message LogReq {
+    optional string basename = 1;
+    repeated LogMessageItem items = 2; 
+    optional LogOptions options = 3;
+    optional int32 flush_level = 4; 
+}
+
+message LogResp {
+    optional int32 error_code = 1;
+}
+
+service LoggingRpcService {
+    //记录日志
+    rpc Log(LogReq) returns (LogResp);
+}

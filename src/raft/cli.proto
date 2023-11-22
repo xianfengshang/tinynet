@@ -1,0 +1,15 @@
+package tinynet.raft;
+
+option cc_generic_services = true;
+
+message GetLeaderReq {
+}
+
+message GetLeaderResp {
+    optional string leaderName = 1; 
+    optional string leaderAddress = 2; 
+}
+
+service RaftCliRpcService {
+    rpc GetLeader(GetLeaderReq) returns(GetLeaderResp); 
+}

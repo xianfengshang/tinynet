@@ -1,0 +1,1200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{eeed78d2-c99c-4e85-a649-4be6890f1ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\http">
+      <UniqueIdentifier>{2782757b-63b1-4bea-8ad5-0a7b552841d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{5d34df27-bb6c-4080-b5a9-7f61c7db6eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tns">
+      <UniqueIdentifier>{6bfbbc71-b73f-4c19-878b-1b0b3b13def2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rpc">
+      <UniqueIdentifier>{0ebe35e2-6447-4c61-ad17-965716e9a067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{56b35314-9b57-4aa1-8dd5-d0a7144d6632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lualib">
+      <UniqueIdentifier>{4eb19387-a0df-4a12-931e-f265c6e2d5ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mysql">
+      <UniqueIdentifier>{42fc55ec-9629-40c1-810b-8c970426be5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logging">
+      <UniqueIdentifier>{e6ee9563-50b4-4670-9a28-70d821740402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raft">
+      <UniqueIdentifier>{b5ded471-386e-4c52-8b39-e014294b8f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cluster">
+      <UniqueIdentifier>{d20d7f3f-1a69-49ad-8801-c8dfd6078dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tdc">
+      <UniqueIdentifier>{4e4e1c3e-03b9-47f9-afd5-7d10814e98db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\websocket">
+      <UniqueIdentifier>{8514b061-101d-4837-82da-ba8c4e798368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tfs">
+      <UniqueIdentifier>{cd27f659-95ae-41c8-9fd7-093a8cdb9f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="text">
+      <UniqueIdentifier>{09998845-96f0-4a59-bd7f-8ac2db796ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="process">
+      <UniqueIdentifier>{251d535d-e126-41cc-b42d-051fa8316b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{0b69e8e0-680a-4f0d-ad32-cebb9e273172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wal">
+      <UniqueIdentifier>{befe7231-b8c3-4cff-aafd-da7719420456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="naming">
+      <UniqueIdentifier>{1e4e7623-b42c-4937-aabd-8913cc4ac001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="redis">
+      <UniqueIdentifier>{5b704b5d-0a06-4543-9a5a-5ddfe8025a79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aoi">
+      <UniqueIdentifier>{693916b8-f086-42eb-a796-4670342fd9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="geo">
+      <UniqueIdentifier>{7bc0e6ce-05fd-48de-a00e-7731b94f0bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{3be4a8bc-5fd2-4166-aaa9-fd7e3d999c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tilemap">
+      <UniqueIdentifier>{0bcaf91f-3a56-4940-9ab6-c1858d9a681b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\base\application.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\at_exit.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\clock.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\coding.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\console_logger.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\crypto.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\error_code.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\file_lock.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\json_types.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\runtime_logger.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\unique_id.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\winsock_manager.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cluster\cluster_service.cpp">
+      <Filter>cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\file_mapping.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\file_mapping_unix.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\file_mapping_win.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\file_stream.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\log_destination.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\log_file.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\logger.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\logger_client.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\logging.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\logging.pb.cc">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\logging_service.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\logging_service_impl.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_base64.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_cluster.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_compat.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_fs.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_helper.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_http.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_identifier.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_logger.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_mysql.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_pb.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_process.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_pugixml.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_rapidjson.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_redis.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_script.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_socket.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_tcp.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_timer.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_tinynet.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_websocket.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_yaml.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_zlib.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\mysql_auth.cpp">
+      <Filter>mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\mysql_channel.cpp">
+      <Filter>mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\mysql_charset.cpp">
+      <Filter>mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\mysql_client.cpp">
+      <Filter>mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\mysql_codec.cpp">
+      <Filter>mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\mysql_protocol.cpp">
+      <Filter>mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\mysql_query.cpp">
+      <Filter>mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\naming\kv_db.cpp">
+      <Filter>naming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\naming\naming.pb.cc">
+      <Filter>naming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\naming\naming_resolver.cpp">
+      <Filter>naming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\naming\naming_rpc_service_impl.cpp">
+      <Filter>naming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\naming\naming_service.cpp">
+      <Filter>naming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\naming\naming_state.cpp">
+      <Filter>naming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\event_loop.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\poller.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\poller_epoll.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\poller_iocp.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\poller_kqueue.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\poller_select.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\socket.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\stream_listener.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\stream_socket.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\task_manager.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\timer_manager.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\http\http_client.cpp">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\http\http_codec.cpp">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\http\http_parser.c">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\http\http_server.cpp">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\websocket\websocket.cpp">
+      <Filter>net\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\websocket\websocket_codec.cpp">
+      <Filter>net\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\websocket\websocket_server.cpp">
+      <Filter>net\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\process\process.cpp">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\process\process_unix.cpp">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\process\process_win.cpp">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\cli.pb.cc">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\raft.pb.cc">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\raft_cli_rpc_service_impl.cpp">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\raft_log_manager.cpp">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\raft_memory_log.cpp">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\raft_node.cpp">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\raft_peer.cpp">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\raft_rpc_service_impl.cpp">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\raft_service.cpp">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\raft_snapshot.cpp">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\raft\wal.pb.cc">
+      <Filter>raft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\redis_channel.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\redis_client.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\redis_codec.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\redis_protocol.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\protobuf_manager.cpp">
+      <Filter>rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\rpc_channel.cpp">
+      <Filter>rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\rpc_codec.cpp">
+      <Filter>rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\rpc_controller.cpp">
+      <Filter>rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\rpc_helper.cpp">
+      <Filter>rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\rpc_info.cpp">
+      <Filter>rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\rpc_method.cpp">
+      <Filter>rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\rpc_server.cpp">
+      <Filter>rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\zero_copy_stream.cpp">
+      <Filter>rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tdc\tdc.pb.cc">
+      <Filter>tdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tdc\tdc_channel.cpp">
+      <Filter>tdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tdc\tdc_client.cpp">
+      <Filter>tdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tdc\tdc_message.cpp">
+      <Filter>tdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tdc\tdc_message_queue.cpp">
+      <Filter>tdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tdc\tdc_rpc_service_impl.cpp">
+      <Filter>tdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tdc\tdc_service.cpp">
+      <Filter>tdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tfs\tfs_service.cpp">
+      <Filter>tfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tns\tns_service.cpp">
+      <Filter>tns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\date_utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\fs_utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\net_utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\process_utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\random_utiils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\string_utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\sys_utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\uri_utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\zip_utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\zlib_utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wal\log_codec.cpp">
+      <Filter>wal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wal\log_recorder.cpp">
+      <Filter>wal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tinynet\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\allocator.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_allocator.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tinynet\app_init.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\ssl_context.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\ssl_listener.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\ssl_socket.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\file_descriptor.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\listener.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\socket_server.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\socket_channel.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\http\http_channel.cpp">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aoi\aoi_service.cpp">
+      <Filter>aoi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_aoi.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\bounds.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\mathf.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\vector2.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\vector3.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\geo\geo_service.cpp">
+      <Filter>geo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_geo.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_mmdb.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\app\app_container.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\app\app_config.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tinynet\app_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_bytebuf.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_bytes.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\text\bloom_filter.cpp">
+      <Filter>text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\text\text_filter.cpp">
+      <Filter>text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_textfilter.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\text\text_bloom_filter.cpp">
+      <Filter>text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\text\text_trie_filter.cpp">
+      <Filter>text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\text\text_darts_filter.cpp">
+      <Filter>text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tilemap\tilemap.cpp">
+      <Filter>tilemap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lualib\lua_tilemap.cpp">
+      <Filter>lualib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\vector3int.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\text\text_radix_filter.cpp">
+      <Filter>text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\error_code.pb.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\base\application.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\at_exit.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\base.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\clock.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\cmdline.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\coding.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\console_logger.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\crypto.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\error_code.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\file_lock.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\id_allocator.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\io_buffer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\io_buffer_stream.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\json_types.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\module.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\net_types.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\runtime_logger.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\singleton.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\unique_id.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\winsock_manager.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cluster\cluster_service.h">
+      <Filter>cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cluster\cluster_types.h">
+      <Filter>cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\io\file_mapping.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\io\file_mapping_unix.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\io\file_mapping_win.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\io\file_stream.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging\log_destination.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging\log_file.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging\logger.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging\logger_client.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging\logging.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging\logging.pb.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging\logging_service.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging\logging_service_impl.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_base64.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_cluster.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_common_types.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_compat.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_fs.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_fs_types.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_helper.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_http.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_identifier.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_logger.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_mysql.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_pb.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_process.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_process_types.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_proto_types.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_pugixml.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_rapidjson.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_redis.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_script.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_socket.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_socket_types.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_tcp.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_timer.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_tinynet.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_types.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_websocket.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_websocket_types.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_yaml.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_zlib.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\mysql_auth.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\mysql_channel.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\mysql_charset.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\mysql_client.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\mysql_codec.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\mysql_protocol.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\mysql_query.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\mysql_types.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\naming\kv_db.h">
+      <Filter>naming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\naming\naming.pb.h">
+      <Filter>naming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\naming\naming_resolver.h">
+      <Filter>naming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\naming\naming_rpc_service_impl.h">
+      <Filter>naming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\naming\naming_service.h">
+      <Filter>naming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\naming\naming_state.h">
+      <Filter>naming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\event_loop.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\poller.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\poller_epoll.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\poller_impl.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\poller_iocp.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\poller_kqueue.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\poller_select.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\socket.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\stream_listener.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\stream_socket.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\task_manager.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\timer_manager.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\http\http_client.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\http\http_codec.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\http\http_parser.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\http\http_protocol.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\http\http_server.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\websocket\websocket.h">
+      <Filter>net\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\websocket\websocket_codec.h">
+      <Filter>net\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\websocket\websocket_protocol.h">
+      <Filter>net\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\websocket\websocket_server.h">
+      <Filter>net\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\process\process.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\process\process_event_handler.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\process\process_impl.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\process\process_types.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\process\process_unix.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\process\process_win.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\cli.pb.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft.pb.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_cli_rpc_service_impl.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_log_manager.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_memory_log.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_node.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_peer.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_rpc_service_impl.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_service.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_snapshot.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_state_machine.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\raft_types.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\raft\wal.pb.h">
+      <Filter>raft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\redis_channel.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\redis_client.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\redis_codec.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\redis_protocol.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\redis_types.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\protobuf_manager.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\rpc_channel.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\rpc_codec.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\rpc_controller.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\rpc_helper.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\rpc_info.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\rpc_method.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\rpc_packet.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\rpc_server.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rpc\zero_copy_stream.h">
+      <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tdc\tdc.pb.h">
+      <Filter>tdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tdc\tdc_channel.h">
+      <Filter>tdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tdc\tdc_client.h">
+      <Filter>tdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tdc\tdc_message.h">
+      <Filter>tdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tdc\tdc_message_queue.h">
+      <Filter>tdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tdc\tdc_rpc_service_impl.h">
+      <Filter>tdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tdc\tdc_service.h">
+      <Filter>tdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tfs\tfs_service.h">
+      <Filter>tfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tfs\tfs_types.h">
+      <Filter>tfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tns\tns_service.h">
+      <Filter>tns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\date_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\fs_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\net_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\process_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\random_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\string_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\sys_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\uri_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\zip_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\zlib_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wal\log_codec.h">
+      <Filter>wal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wal\log_recorder.h">
+      <Filter>wal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wal\log_types.h">
+      <Filter>wal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tinynet\ascii_logo.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\allocator.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_allocator.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\rwlock.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\spinlock.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tinynet\app_init.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\ssl_context.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\ssl_listener.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\ssl_socket.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\file_descriptor.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\listener.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\socket_server.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\socket_channel.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net\http\http_channel.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging\log_level.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aoi\aoi_service.h">
+      <Filter>aoi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aoi\aoi_types.h">
+      <Filter>aoi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aoi\aoi_traits.h">
+      <Filter>aoi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_aoi.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\bounds.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\mathf.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\vector2.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\vector3.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\geo\geojson_types.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\geo\geo_service.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\geo\geo_types.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_geo.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_mmdb.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_geo_types.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\app\app_container.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\app\app_config.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\app\app_types.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tinynet\app_manager.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_bytebuf.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_bytes.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\text\bloom_filter.h">
+      <Filter>text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\text\text_filter.h">
+      <Filter>text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_textfilter.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\text\text_bloom_filter.h">
+      <Filter>text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\text\text_filter_impl.h">
+      <Filter>text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\text\text_trie_filter.h">
+      <Filter>text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\text\text_darts_filter.h">
+      <Filter>text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tilemap\tilemap.h">
+      <Filter>tilemap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tilemap\tilemap_types.h">
+      <Filter>tilemap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_tilemap.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lualib\lua_tilemap_types.h">
+      <Filter>lualib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\vector3int.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tilemap\tilemap_traits.h">
+      <Filter>tilemap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\text\text_radix_filter.h">
+      <Filter>text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\string_view.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\error_code.pb.h">
+      <Filter>base</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

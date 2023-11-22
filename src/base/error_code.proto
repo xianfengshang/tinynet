@@ -1,0 +1,161 @@
+package tinynet;
+enum ErrorCode {
+    ERROR_OK = 0; //no error
+
+    ERROR_FAILED = -1; //failed
+
+    ERROR_INVAL = -22; //invalid argument
+
+    ERROR_OS_OOM = -5001; //out of memory
+    
+    ERROR_OS_ADAPTERINFO = -5002; //get adpater address info error 
+    
+    ERROR_URI_UNRECOGNIZED = -5051; //Unrecognized endpoint URI
+        
+    ERROR_NET_GETADDRINFO = -5101; //get net address info error 
+    
+    ERROR_SOCKET_BADF = -5201; //bad socket descriptor 
+    
+    ERROR_SOCKET_REUSEADDR = -5202; //socket reuse addr error 
+
+    ERROR_SOCKET_REUSEPORT = -5203; //socket reuse port error 
+    
+    ERROR_SOCKET_SETIPV6ONLY = -5204; //socket set ipv6 only error 
+        
+    ERROR_SOCKET_BIND = -5205; //socket bind faild 
+    
+    ERROR_SOCKET_LISTEN = -5206; //socket listen faild 
+    
+    ERROR_SOCKET_ACCEPT = -5207; //server socket accept faild    
+    
+    ERROR_SOCKET_SETNONBLOCKING = -5208; //socket set non blocking faild 
+    
+    ERROR_SOCKET_CLOSEDBYPEER = -5209; //socket closed by peer 
+
+    ERROR_SOCKET_CLOSEDBYSERVER = -5210; //socket closed by server 
+    
+    ERROR_SOCKET_READ = -5211; //socket read error 
+
+    ERROR_SOCKET_WRITE = -5212; //socket write error 
+    
+    ERROR_SOCKET_POLL = -5213; //socket poll event error 
+    
+    ERROR_SOCKET_CONNECT = -5214; //socket connect error 
+        
+    ERROR_SOCKET_CONNECTIONREFUSED = -5215; //socket connect refused
+    
+    ERROR_SOCKET_BINDANDLISTEN = -5216; //socket bind and listen faild 
+
+    ERROR_UNIX_SOCKET_CONNECT = -5217; //unix domain socket connect error
+	
+	ERROR_SOCKET_GETSOCKNAME = -5218; //Get local socket name failed
+		
+	ERROR_SOCKET_GETPEERNAME = -5219; //Get peer socket name failed
+	
+	ERROR_SOCKET_GETSOCKOPT = -5220; //Get socket option failed	
+
+	ERROR_SOCKET_READ_EOF = -5221; //socket read eof	
+
+	ERROR_SOCKET_NOT_CONNECTED = -5222; //socket is not connected	
+
+	ERROR_SOCKET_CONNECTTIMEOUT = -5223; //socket connect timeout	
+	
+	ERROR_SOCKET_CONNECTCLOSED = -5224; //socket connection closed	
+        
+    ERROR_WEBSOCKET_KEEPALIVETIMEOUT = -5301; //websocket keep alive timeout
+	
+	ERROR_WEBSOCKET_HANDSHAKETIMEOUT = -5302; //web socket handshake timeout
+		
+	ERROR_WEBSOCKET_HANDSHAKE = -5303; //web socket handshake error
+	
+	ERROR_WEBSOCKET_CLOSEDBYPEER = -5304; //Web socket closed by peer
+    
+    ERROR_WEBSOCKET_CLOSEDBYSERVER = -5305; //Web socket closed by server
+
+    ERROR_WEBSOCKET_PAYLOAD_LENGTH = -5306; //Web socket message too long
+	
+	ERROR_HTTP_REQUEST = -5321; //Http request error
+    
+  	ERROR_SERVER_STARTED = -5401; //Tcp server is already started
+    
+    ERROR_EVENTLOOP_REGISTER = -5411; //Register interested event to event loop error
+    
+    ERROR_RPC_SEQUENCEERROR = -5501; //RPC got wrong sequence number
+
+    ERROR_RPC_CHECKSUMERROR = -5502; //RPC data check sum error
+    
+    ERROR_RPC_CHANNELERROR = -5503; //RPC channel error
+    
+    ERROR_RPC_METHODNOTFOUND = -5504; //RPC service can not found method
+
+    ERROR_RPC_REQUESTCANCELED = -5505; //RPC request canceled
+
+    ERROR_RPC_ENCODEERROR = -5506; //RPC message encode error
+
+    ERROR_RPC_DECODEERROR = -5507; //RPC message decode error
+
+    ERROR_RPC_MESSAGETOOLONG = -5508; //RPC message too long
+
+    ERROR_RAFT_NOSUCHNODE = -5601; //RAFT service no such node
+
+    ERROR_RAFT_CLUSTERDOWN = -5602; //RAFT service cluster down
+
+    ERROR_RAFT_CONFIGURATION = -5603; //RAFT configuration error
+    
+    ERROR_RAFT_SNAPSHOTLOADERROR = -5604; //RAFT snapshot load error
+
+    ERROR_RAFT_WALLOADERROR = -5605; //RAFT write-ahead logging load error
+
+    ERROR_TNS_NOSTUB = -5701; //tns no name resolver client stub
+
+    ERROR_TNS_SERVICEUNAVAILABLE = -5702; //tns service unavailable
+
+    ERROR_TNS_SERVICEREDIRECT = -5703; //tns service redirect
+
+    ERROR_TNS_MAXREDIRECT = -5704; //tns service reach max redirect times
+
+    ERROR_TNS_NAMENOTFOUND = -5705; //tns name not found
+
+    ERROR_TNS_UNRECOGNIZEDFORMAT = -5706; //tns read unrecognized format
+
+    ERROR_TNS_NAMEEXPIRED = -5707; //tns name expired
+
+    ERROR_TNS_METHODNOTFOUND = -5708; //tns method not found
+    
+    ERROR_TDC_SERVICEUNAVAILABLE = -5801; //tdc service unavailable
+
+    ERROR_TDC_MESSAGEQUEUEOVERFLOW = -5802; //tdc channel message queue overflow
+
+    ERROR_TDC_SERVICEMOVED = -5803; //tdc service moved
+
+    ERROR_TDC_MESSAGEOUTOFSEQUENCE = -5804; //tdc message out of sequence
+	
+	ERROR_TDC_NOSTUB = -5805; //tdc no service stub available
+    
+    ERROR_MYSQL_UNINITIALIZED = -5901; //mysql client not initialized
+	
+	ERROR_MYSQL_PROTOCOLVERSION = -5902; //mysql protocol version missmatch, higher protocol version required,
+	
+	ERROR_MYSQL_CONNECTTIMEOUT = -5903; //mysql client connect to mysql server timed out
+	
+	ERROR_MYSQL_HANDSHAKE = -5904; //mysql client handshake error
+
+	ERROR_MYSQL_QUERYBUSY = -5905; //mysql client is busy running a query
+	
+	ERROR_MYSQL_READINGPACKET = -5906; //mysql client got an error reading server packet
+    
+	ERROR_REDIS_CONNECTTIMEOUT = -5951; //redis client connect to redis server timed out
+
+	ERROR_REDIS_HANDSHAKE = -5952; //redis client handshake error
+		
+	ERROR_REDIS_READINGREPLY = -5953; //redis client got an error reading reply
+		
+	ERROR_REDIS_CONNECTIONCLOSED = -5954; //redis client connection to redis server closed
+
+	ERROR_REDIS_SUBSCRIBE = -5955; //redis client subscribe error
+	
+    ERROR_PROCESS_SPAWN = -6001; //spawn child process error
+    
+    ERROR_PROCESS_KILL = -6002;  //kill child process error
+}
+

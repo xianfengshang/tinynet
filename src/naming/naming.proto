@@ -1,0 +1,105 @@
+package tinynet.naming;
+
+option cc_generic_services = true;
+
+message KeyValuePair
+{
+    optional string key = 1;
+    optional string value = 2;
+    optional int64 expire = 3;
+}
+
+message SnapshotData {
+    repeated KeyValuePair data = 1;
+}
+
+enum ClusterOpcode {
+    PUT_DATA = 1;
+    DEL_DATA = 2; 
+}
+
+message ClusterPutData {
+    optional string key = 1;
+    optional string value = 2;
+    optional int64 expire = 3;
+}
+
+message ClusterDelData {
+    optional string key = 1;
+}
+
+message ClusterMessage {
+    optional ClusterOpcode opcode = 1;
+    optional ClusterPutData put_data = 2;
+    optional ClusterDelData del_data = 3;
+}
+
+message ClientPutReq {
+    optional string key = 1;
+    optional string value = 2;
+    optional int32 ttl = 3;
+}
+
+message ClientPutRes {
+    optional string key = 1;
+    optional string value = 2;
+    optional int32 ttl = 3;
+}
+
+message ClientGetReq {
+    optional string key = 1;
+}
+
+message ClientGetRes {
+    optional string key = 1;
+    optional string value = 2;
+}
+
+message ClientDelReq {
+    optional string key = 1;
+}
+
+message ClientDelRes {
+    optional string key = 1;
+}
+
+message ClientKeysReq {
+    optional string key = 1;
+}
+
+message ClientKeysRes {
+    repeated string keys = 1;
+}
+
+enum ClientOpcode {
+    GET_REQ = 1;
+    GET_RES = 2;
+    PUT_REQ = 3;
+    PUT_RES = 4;
+    DEL_REQ = 5;
+    DEL_RES = 6;
+    KEYS_REQ = 7;
+    KEYS_RES = 8;
+}
+
+message ClientRequest {
+    optional ClientOpcode opcode = 1;
+    optional ClientPutReq put_req = 2;
+    optional ClientGetReq get_req = 3;
+    optional ClientDelReq del_req = 4;
+    optional ClientKeysReq keys_req = 5; 
+}
+
+message ClientResponse {
+    optional int32 error_code = 1 [default = -5702]; //default error code is tns service unavailable
+    optional string redirect = 2;    
+    optional ClientOpcode opcode = 3;
+    optional ClientPutRes put_res = 4;
+    optional ClientGetRes get_res = 5;
+    optional ClientDelRes del_res = 6;
+    optional ClientKeysRes keys_res = 7; 
+}
+
+service NamingRpcService {
+    rpc Invoke(ClientRequest) returns (ClientResponse);
+};

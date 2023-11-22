@@ -1,0 +1,42 @@
+package tinynet.raft;
+import "raft.proto";
+
+option cc_generic_services = true;
+
+enum LogType {
+    LT_ConfChanged = 0;
+    LT_TermChanged = 1;
+    LT_VoteChanged = 2;
+    LT_EntriesAppended = 3;
+    LT_EntriesErased = 4;
+}
+
+message ConfChangedLog {
+    repeated string urls = 1;
+}
+
+message TermChangedLog {
+    optional uint64 current_term = 1;
+}
+
+message VoteChangedLog {
+    optional int32 voted_for = 1;
+}
+
+message EntriesAppendedLog {
+    repeated LogEntryData entries = 1;
+}
+
+message EntriesErasedLog {
+    optional uint64 first_index = 1;
+    optional uint64 last_index = 2;
+}
+
+message WALRecord {
+    optional LogType type = 1;
+    optional ConfChangedLog conf_changed = 2;
+    optional TermChangedLog term_changed = 3;
+    optional VoteChangedLog vote_changed = 4;
+    optional EntriesAppendedLog entries_appended = 5;
+    optional EntriesErasedLog entries_erased = 6;
+}
